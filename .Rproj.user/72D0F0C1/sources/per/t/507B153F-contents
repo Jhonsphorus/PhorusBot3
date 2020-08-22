@@ -1,0 +1,322 @@
+---
+title: "PhorusBot8"
+resource_files:
+- Pic1.jpg
+runtime: shiny
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(telegram.bot)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+
+
+```{r}
+bot <- Bot(token = "1078613762:AAEjAF9yJycaPofoLjKupZFeOQjJd9ers3I")
+
+#updater <- Updater(token = bot_token("PhorusBot"))
+updater <- Updater(token = "1078613762:AAEjAF9yJycaPofoLjKupZFeOQjJd9ers3I")
+
+#updater <- Updater(token = "1078613762:AAEjAF9yJycaPofoLjKupZFeOQjJd9ers3I",request_config = POST(url = "http://phorus.shinyapps.io/PhorusBot4"))
+
+```
+
+```{r}
+#3. The first function
+start1 <- function(bot, update){
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("Hello! Welcome to Phorus Analytics"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("Type any of the options below that suit your request"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 1. /start"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 2. /about"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 3. /contact"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 4. /email"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 5. /twitter"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 6. /linkedin"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 7. /projects"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 8. /images"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 9. /dataset"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 10. /analytics"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 11. /business"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 12. /news"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 13. @youtube"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 14. @music"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 15. @sticker"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 16. @foursquare"),parse_mode='Markdown')
+   
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 17. @wiki"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 18. @bing"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 19. @vid"),parse_mode='Markdown')
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("option 20. @pic"),parse_mode='Markdown')
+  
+}
+
+#4. The second function
+ contact1 <- function(bot, update){
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("Semicolon africa, Sabo, Lagos Nigeria."))
+ }
+ 
+ #5. The third function
+ email1 <- function(bot, update){
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("mailphorus@gmail.com"))
+ }
+ 
+ 
+ #6. The fourth function
+ twitter1 <- function(bot, update){
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("@jhonsphorus"))
+ }
+ 
+ #7. The fifth function
+ linkedin1 <- function(bot, update){
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.linkedin.com/in/johnson-adebayo/"))
+ }
+ 
+ #8. The sixth function
+ project1 <- function(bot, update){
+  bot$sendMessage(chat_id = update$message$chat_id,text = print(" https://phorus.shinyapps.io/Afriloan2/"))
+   
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://phorus.shinyapps.io/NigeriaTelecomDashboard/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus1.shinyapps.io/Nigeria_Population_dashboard/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus1.shinyapps.io/AfriCol/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus1.shinyapps.io/NBA_Player_Dashboard/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus1.shinyapps.io/TSForecastApp/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/timeseries_app/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/regapp/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/calculator/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/plotboxapp/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/temperature_converter/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://jhonsphorus.shinyapps.io/plotboxapp/"))
+ }
+ 
+#9. The seventh function
+image1 <- function(bot, update){
+  # Send photo
+  #bot$sendPhoto(chat_id = update$message$chat_id,photo = "https://telegram.org/img/t_logo.png")
+  #bot$sendPhoto(chat_id = update$message$chat_id,photo = "C:/Users/usewr/Documents/RProject/Personal_Practice_New/PhorusChatBot/email2.png")
+  
+  bot$sendPhoto(chat_id = update$message$chat_id, photo = "https://drive.google.com/file/d/11ajFBaemLes3ddF3JbbRYVPIw99s8eTa/view")
+  
+  #bot$sendPhoto(chat_id = update$message$chat_id, photo = "C:/Users/usewr/Documents/RProject/PhorusBot3/Pic1.jpg")
+  
+  #bot$sendPhoto(chat_id = update$message$chat_id, photo = "C:/Users/usewr/Documents/RProject/PhorusBot3/Pic2.jpg")
+  
+  
+  #bot$sendPhoto(chat_id = update$message$chat_id,photo = "https://drive.google.com/file/d/18OuQM3sq98EZAVJjgG5EhE8blOlIcfCC/view?usp=sharing")
+}
+
+dataset1 <- function(bot, update){
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/uciml/german-credit"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/austinreese/craigslist-carstrucks-data"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/lohitharcot/creditbankdata"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/tanuprabhu/population-by-country-2020"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/theworldbank/health-nutrition-and-population-statistics"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/census/population-time-series-data"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kaggle.com/xvivancos/barcelona-data-sets"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("http://archive.ics.uci.edu/ml/index.php"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://catalog.data.gov/dataset"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://data.fivethirtyeight.com/"))
+  
+
+  #bot$sendDocument(chat_id = update$message$chat_id,document="CC:/Users/usewr/Documents/RProject/PhorusBot3/german_credit.csv") 
+  
+}
+
+# About Function
+
+about1 <- function(bot, update){
+  
+  #bot$sendPhoto(chat_id = update$message$chat_id, photo = "C:/Users/usewr/Documents/RProject/PhorusBot3/Pic1.jpg")
+  
+  #bot$sendPhoto(chat_id = update$message$chat_id, photo = "https://drive.google.com/file/d/1hg7ltptIdemLxSV6LX2oj3e7cFZTJPF8/view")
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("PhorusBot is created by Johnson Adebayo, a data scientist. The aim of this bot is to serve as a ditigal assistant which informs users about my analytics projects, latest news, access to dataset for analytics, links to information on data science and analytics websites, business news just to mentioned a few of the purposes which its serves."))
+  
+}
+
+# Business function
+business1 <- function(bot, update){
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.ft.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("http://fdcng.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.fmdqgroup.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://fortune.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.cnbc.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.bloombergquint.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://business.financialpost.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.businessdailyafrica.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.arabianbusiness.com/"))
+  
+}
+
+# News function
+news1 <- function(bot, update){
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.aljazeera.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://edition.cnn.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.channelstv.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.tvcnews.tv/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.bbc.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.cgtn.com/"))
+  
+}
+
+# Analytics function
+analytics1 <- function(bot, update){
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.datasciencecentral.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.datacamp.com/community/blog"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.dataversity.net/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.datasciencenigeria.org/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://101.datascience.community/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("http://semicolon.africa/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://blog.datasciencedojo.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.kdnuggets.com/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://www.reddit.com/r/datascience/"))
+  
+  bot$sendMessage(chat_id = update$message$chat_id,text = print("https://blog.revolutionanalytics.com/"))
+  
+  
+}
+
+
+ #10. The seventh function
+begin1 <- function(bot, update){
+  
+  updater$start_polling()
+}
+
+#11. The eigth function
+stop1 <- function(bot, update){
+  
+  updater$stop_polling()
+}
+
+```
+
+
+```{r}
+#
+
+start_handler <- CommandHandler("start", start1, username="JhonsphorusBot")
+contact_handler <- CommandHandler("contact", contact1, username="JhonsphorusBot")
+stop_handler <- CommandHandler("stop", stop1, username="JhonsphorusBot")
+email_handler <- CommandHandler("email", email1, username="JhonsphorusBot")
+twitter_handler <- CommandHandler("twitter", twitter1, username="JhonsphorusBot")
+linkedin_handler <- CommandHandler("linkedin", linkedin1, username="JhonsphorusBot")
+project_handler <- CommandHandler("projects", project1, username="JhonsphorusBot")
+image_handler <- CommandHandler("images", image1, username="JhonsphorusBot")
+dataset_handler <- CommandHandler("dataset", dataset1, username="JhonsphorusBot")
+news_handler <- CommandHandler("news", news1, username="JhonsphorusBot")
+business_handler <- CommandHandler("business", business1, username="JhonsphorusBot")
+analytics_handler <- CommandHandler("analytics", analytics1, username="JhonsphorusBot")
+about_handler <- CommandHandler("about", about1, username="JhonsphorusBot")
+
+#begin_handler <- CommandHandler("begin", begin1, username="JhonsphorusBot")
+updater <- updater + start_handler + contact_handler + stop_handler + email_handler + twitter_handler + linkedin_handler+project_handler + image_handler + dataset_handler + news_handler + business_handler + analytics_handler + about_handler
+
+```
+
+
+```{r}
+#updater$start_polling()
+begin1()
+
+```
+
+
+```{r}
+#rmarkdown::run("PhorusBot8.Rmd")
+
+```
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598109491052.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4209011174",
+    "id" : "C62B2277",
+    "lastKnownWriteTime" : 1598109907,
+    "last_content_update" : 1598109907383,
+    "path" : "~/PhorusBot3/README.R",
+    "project_path" : "README.R",
+    "properties" : {
+        "cursorPosition" : "1,352",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

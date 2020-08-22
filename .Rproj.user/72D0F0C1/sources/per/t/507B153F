@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598109515069.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3549949841",
+    "id" : "507B153F",
+    "lastKnownWriteTime" : 1593370054,
+    "last_content_update" : 1593370054,
+    "path" : "~/PhorusBot3/PhorusBot8.Rmd",
+    "project_path" : "PhorusBot8.Rmd",
+    "properties" : {
+        "cursorPosition" : "184,1",
+        "scrollLine" : "170"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

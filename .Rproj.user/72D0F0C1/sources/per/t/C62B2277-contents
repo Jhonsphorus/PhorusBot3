@@ -1,0 +1,2 @@
+
+# ABOUT: "PhorusBot is created by Johnson Adebayo, a data scientist. The aim of this bot is to serve as a ditigal assistant which informs users about my analytics projects, latest news, access to dataset for analytics, links to information on data science and analytics websites, business news just to mentioned a few of the purposes which its serves."

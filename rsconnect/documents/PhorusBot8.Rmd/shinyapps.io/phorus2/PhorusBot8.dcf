@@ -1,0 +1,12 @@
+name: PhorusBot8
+title: PhorusBot8
+username:
+account: phorus2
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2514407
+bundleId: 3326446
+url: https://phorus2.shinyapps.io/PhorusBot8/
+when: 1593369587.1027
+asMultiple: FALSE
+asStatic: FALSE
